@@ -8,4 +8,19 @@ library(tidyverse)
 library(readr)
 ```
 
+Load in 2016 CARB data
+
+```{r}
+sixteen_data = read_csv("./2016_carb_ceidars_mebr_ca.csv")
+```
+
+```{r}
+sixteen_data = janitor::clean_names(sixteen_data)
+```
+
+
+```{r}
+skimr::skim(sixteen_data)
+```
+
 
